@@ -1,0 +1,244 @@
+@import "main.less";
+
+//------------------------------------------------------------
+// Main window buttons
+//------------------------------------------------------------
+.item-container {
+  align-items: center;
+}
+
+.toolbar-activity .activity-toolbar-icon {
+  margin-top: 0;
+}
+.toolbar-window-controls {
+  width: auto;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+// Toolbar styling
+body.platform-linux {
+  .item-compose {
+    margin-top: 0;
+    order: 51 !important;
+  }
+  .toolbar-window-controls {
+    button {
+      width: 16px;
+      height: 16px;
+      margin: 0px 4px 4px;
+      background-size: 16px 16px;
+      background-position: 0 0 !important;
+      transition: all 100ms linear;
+      transform-origin: 50% 50%;
+      &:hover {
+        transform: scale(1.375);
+      }
+    }
+
+    .close {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close.png");
+      margin-left: 4px;
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-active.png");
+      }
+    }
+
+    .minimize {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize.png");
+      margin: 0px 4px 4px;
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-active.png");
+      }
+    }
+
+    .maximize {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize.png");
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-active.png");
+      }
+    }
+  }
+
+  // Inactive main window
+  &.is-blurred {
+    .toolbar-window-controls {
+      .close {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-backdrop.png");
+      }
+
+      .minimize {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-backdrop.png");
+      }
+
+      .maximize {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-backdrop.png");
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------
+// Preferences window buttons
+//------------------------------------------------------------
+body.platform-linux {
+  .sheet-toolbar-container[data-id="Preferences"] .toolbar-window-controls {
+    .close {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close.png");
+      margin-left: 4px;
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-active.png");
+      }
+    }
+
+    .minimize {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize.png");
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-active.png");
+      }
+    }
+
+    .maximize {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize.png");
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-active.png");
+      }
+    }
+  }
+
+  // Inactive composer window
+  &.is-blurred {
+    .sheet-toolbar-container[data-id="Preferences"] .toolbar-window-controls {
+      .close {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-backdrop.png");
+      }
+
+      .minimize {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-backdrop.png");
+      }
+
+      .maximize {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-backdrop.png");
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------
+// Composer window buttons
+//------------------------------------------------------------
+body.platform-linux {
+  .layout-mode-popout .sheet-toolbar {
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+  }
+
+  .layout-mode-popout .toolbar-window-controls {
+    .close {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close.png");
+      margin-left: 4px;
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-active.png");
+      }
+    }
+
+    .minimize {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize.png");
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-active.png");
+      }
+    }
+
+    .maximize {
+      background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize.png");
+
+      &:hover {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-hover.png");
+      }
+
+      &:active {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-active.png");
+      }
+    }
+  }
+
+  // Inactive composer window
+  &.is-blurred {
+    .layout-mode-popout .toolbar-window-controls {
+      .close {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-backdrop.png");
+      }
+
+      .minimize {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-minimize-backdrop.png");
+      }
+
+      .maximize {
+        background-image: url("mailspring://@{asset_path}/styles/titlebuttons/titlebutton-maximize-backdrop.png");
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------
+// Theme selector close button
+//------------------------------------------------------------
+.modal-container .modal .modal-close {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 8px;
+  content: url(mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close.png);
+
+  &:hover {
+    content: url(mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-hover.png);
+  }
+
+  &:active {
+    content: url(mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-active.png);
+  }
+
+  .platform-linux.is-blurred & {
+    content: url(mailspring://@{asset_path}/styles/titlebuttons/titlebutton-close-backdrop.png);
+  }
+}
