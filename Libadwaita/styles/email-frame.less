@@ -1,6 +1,12 @@
 @import "main.less";
 
 #inbox-html-wrapper {
-    font-family: @inbox_font;
-    color: @text_color;
+  font-family: @inbox_font;
+  color: @text_color;
+}
+
+.ignore-in-parent-frame {
+  html, body {
+    color: @text-color !important;
+  }
 }
