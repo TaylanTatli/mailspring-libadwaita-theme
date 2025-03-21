@@ -61,6 +61,14 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/star.svg") !important;
 }
 
+.outline-view .item img.content-mask[alt="snoozed.png"] {
+	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/snoozed.svg") !important;
+}
+
+.outline-view .item img.content-mask[alt="reminders.png"] {
+	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/alarm.svg") !important;
+}
+
 .outline-view .item img.content-mask[alt="important.png"] {
 	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/important.svg") !important;
 }
@@ -83,6 +91,10 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 
 .outline-view .item img.content-mask[alt="drafts.png"] {
 	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/drafts.svg") !important;
+}
+
+.outline-view .item img.content-mask[alt="activity.png"] {
+	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/activity.svg") !important;
 }
 
 .outline-view .item img.content-mask[alt="folder.png"] {
@@ -142,7 +154,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	}
 	
 	&[alt="toolbar-star-selected.png"] {
-		-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/unstar.svg") !important;
+		-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
 	}
 	
 	&[alt="toolbar-markasunread.png"] {
@@ -205,14 +217,14 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	// None icon
 	//---------------------------------
 	.thread-icon-none {
-		-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/unstar.svg") !important;
+		-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
 	}
 
 	//---------------------------------
 	// Star icon
 	//---------------------------------
 	.thread-icon-star-on-hover:hover {
-		-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/unstar.svg") !important;
+		-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
 	}
 
 	.thread-icon.thread-icon-star {
@@ -242,7 +254,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 	.thread-icon.thread-icon-replied,
 	.thread-icon.thread-icon-forwarded {
 		&:hover {
-			-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/unstar.svg") !important;
+			-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
 		}
 	}
 }
@@ -302,7 +314,7 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 }
 
 .sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-star-selected.png"] {
-	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/unstar.svg") !important;
+	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/not-star.svg") !important;
 }
 
 .sheet-toolbar .btn-toolbar img.content-mask[alt="toolbar-markasunread.png"] {
@@ -764,6 +776,13 @@ body.platform-linux .toolbar-menu-control .btn-toolbar img.content-mask[alt="win
 			padding-top: 16px !important;
 		}
 	}
+}
+
+//------------------------------------------------------------
+// Preferences: Subscription tab
+//------------------------------------------------------------
+.container-identity .identity-content-box .features img.content-dark {
+	-webkit-mask-image: url("mailspring://@{asset_path}/styles/papirus/check.svg") !important;
 }
 
 //------------------------------------------------------------

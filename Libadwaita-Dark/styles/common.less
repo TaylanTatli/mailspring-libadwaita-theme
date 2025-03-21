@@ -6,7 +6,7 @@
 mailspring-popover-container,
 mailspring-modal-container,
 mailspring-workspace {
-	font-family: @app_font;
+  font-family: @app_font;
 }
 
 //------------------------------------------------------------
@@ -16,6 +16,7 @@ mailspring-workspace {
 	border: none;
 	height: 45px;
 	max-height: 45px;
+	border-top: 1px solid @borders_color;
 }
 
 body.platform-linux .sheet-toolbar-container.mode-popout {
@@ -214,6 +215,13 @@ select {
 		border-radius: @popover_radius;
 		color: @text_color;
 		padding: 8px;
+
+		h2 {
+			font-family: 'Roboto', 'Ubuntu', 'Cantarell', 'Nylas-Pro', 'Helvetica', sans-serif;
+			font-size: 18px;
+			font-weight: normal;
+			color: @text_color;
+		}
 
 		.menu {
 			background-color: @popover_bg_color;
